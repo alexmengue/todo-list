@@ -27,6 +27,18 @@ body {
   padding-left: 10px;
 }
 
+.button-add-task {
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  background-color: #003329;
+  color: #FFFFFF;
+  font-size: 17px;
+  padding: 0 15px;
+  float: right;
+  cursor: pointer;
+}
+
 img {
   height: 25px;
 }
