@@ -64,6 +64,7 @@ body {
   padding: 0 15px;
   border-radius: 5px;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 img {
