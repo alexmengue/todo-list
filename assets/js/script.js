@@ -5,4 +5,9 @@ let tasksList = [];
 
 button.addEventListener('click', () => {
   tasksList.push(input.value)
+  showTasks();
 });
+
+function showTasks() {
+  //soon
+};
