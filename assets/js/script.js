@@ -11,6 +11,10 @@ button.addEventListener('click', () => {
 function showTasks() {
   let newLi = '';
 
+  tasksList.forEach(task => {
+    //soon
+  });
+
   // <li class="task">
   //   <img src="assets/img/checked.png" alt="tarefa marcada" />
   //   <p>tarefa 1</p>
