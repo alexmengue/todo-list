@@ -12,12 +12,12 @@ function showTasks() {
   let newLi = '';
 
   tasksList.forEach(task => {
-    //soon
+    newLi = newLi + `
+      <li class="task">
+        <img src="assets/img/checked.png" alt="tarefa marcada" />
+        <p>${task}</p>
+        <img src="assets/img/trash.png" alt="tarefa excluída" />
+      </li>
+    `
   });
-
-  // <li class="task">
-  //   <img src="assets/img/checked.png" alt="tarefa marcada" />
-  //   <p>tarefa 1</p>
-  //   <img src="assets/img/trash.png" alt="tarefa excluída" />
-  // </li>
 };
