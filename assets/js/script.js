@@ -1,5 +1,6 @@
 const button = document.querySelector('.button-add-task');
 const input = document.querySelector('.input-task');
+const completeList = querySelector('.list-tasks');
 
 let tasksList = [];
 
