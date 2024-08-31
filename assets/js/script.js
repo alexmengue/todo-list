@@ -1,14 +1,14 @@
 const button = document.querySelector('.button-add-task');
 const input = document.querySelector('.input-task');
-const completeList = querySelector('.list-tasks');
+const completeList = document.querySelector('.list-tasks');
 
 let tasksList = [];
 
-button.addEventListener('click', () => {
-  tasksList.push(input.value)
+function addNewTask() {
+  tasksList.push(input.value);
   input.value = '';
   showTasks();
-});
+}
 
 function showTasks() {
   let newLi = '';
@@ -25,3 +25,5 @@ function showTasks() {
 
   completeList.innerHTML = newLi;
 };
+
+button.addEventListener('click', addNewTask);
