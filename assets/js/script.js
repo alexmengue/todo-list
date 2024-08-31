@@ -6,13 +6,14 @@ let tasksList = [];
 
 button.addEventListener('click', () => {
   tasksList.push(input.value)
+  input.value = '';
   showTasks();
 });
 
 function showTasks() {
   let newLi = '';
 
-  tasksList.forEach(task => {
+  tasksList.forEach((task) => {
     newLi = newLi + `
       <li class="task">
         <img src="assets/img/checked.png" alt="tarefa marcada" />
@@ -21,4 +22,6 @@ function showTasks() {
       </li>
     `
   });
+
+  completeList.innerHTML = newLi;
 };
