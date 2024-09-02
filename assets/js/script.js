@@ -18,12 +18,17 @@ function showTasks() {
       <li class="task">
         <img src="assets/img/checked.png" alt="tarefa marcada" />
         <p>${task}</p>
-        <img src="assets/img/trash.png" alt="tarefa excluída" />
+        <img src="assets/img/trash.png" alt="tarefa excluída" onclick="deleteItem()" />
       </li>
     `
   });
 
   completeList.innerHTML = newLi;
 };
+
+
+function deleteItem() {
+  console.log('item excluido');
+}
 
 button.addEventListener('click', addNewTask);
