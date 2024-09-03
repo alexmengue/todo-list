@@ -13,12 +13,12 @@ function addNewTask() {
 function showTasks() {
   let newLi = '';
 
-  tasksList.forEach((task) => {
+  tasksList.forEach((task, index) => {
     newLi = newLi + `
       <li class="task">
         <img src="assets/img/checked.png" alt="tarefa marcada" />
         <p>${task}</p>
-        <img src="assets/img/trash.png" alt="tarefa excluída" onclick="deleteItem()" />
+        <img src="assets/img/trash.png" alt="tarefa excluída" onclick="deleteItem(${index})" />
       </li>
     `
   });
@@ -27,7 +27,7 @@ function showTasks() {
 };
 
 
-function deleteItem() {
+function deleteItem(index) {
   console.log('item excluido');
 }
 
