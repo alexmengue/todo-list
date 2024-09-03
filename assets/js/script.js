@@ -28,7 +28,8 @@ function showTasks() {
 
 
 function deleteItem(index) {
-  console.log('item excluido');
+  tasksList.splice(index, 1)
+  showTasks();
 }
 
 button.addEventListener('click', addNewTask);
