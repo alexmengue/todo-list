@@ -26,6 +26,9 @@ function showTasks() {
   completeList.innerHTML = newLi;
 };
 
+function concludeTask() {
+  //soon
+}
 
 function deleteItem(index) {
   tasksList.splice(index, 1)
