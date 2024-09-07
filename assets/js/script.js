@@ -7,7 +7,7 @@ let tasksList = [];
 function addNewTask() {
   tasksList.push({
     task: input.value,
-    concludedTask: false
+    concluded: false
   });
   input.value = '';
   showTasks();
@@ -29,8 +29,8 @@ function showTasks() {
   completeList.innerHTML = newLi;
 };
 
-function concludeTask() {
-  //soon
+function concludeTask(index) {
+  tasksList[index].concluded = !tasksList[index].concluded;
 }
 
 function deleteItem(index) {
