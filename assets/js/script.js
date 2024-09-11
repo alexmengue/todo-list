@@ -31,6 +31,7 @@ function showTasks() {
 
 function concludeTask(index) {
   tasksList[index].concluded = !tasksList[index].concluded;
+  showTasks();
 }
 
 function deleteItem(index) {
