@@ -27,6 +27,8 @@ function showTasks() {
   });
 
   completeList.innerHTML = newLi;
+
+  localStorage.setItem('list', JSON.stringify(tasksList));
 };
 
 function concludeTask(index) {
