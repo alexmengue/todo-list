@@ -41,4 +41,8 @@ function deleteItem(index) {
   showTasks();
 }
 
+function loadTasks() {
+  //soon
+}
+
 button.addEventListener('click', addNewTask);
