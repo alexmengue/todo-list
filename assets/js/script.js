@@ -43,6 +43,11 @@ function deleteItem(index) {
 
 function loadTasks() {
   const storageTasks = localStorage.getItem('list');
+  tasksList = JSON.parse(storageTasks);
+
+  showTasks();
 }
+
+loadTasks();
 
 button.addEventListener('click', addNewTask);
