@@ -42,7 +42,7 @@ function deleteItem(index) {
 }
 
 function loadTasks() {
-  //soon
+  const storageTasks = localStorage.getItem('list');
 }
 
 button.addEventListener('click', addNewTask);
