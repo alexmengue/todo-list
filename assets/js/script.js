@@ -43,7 +43,10 @@ function deleteItem(index) {
 
 function loadTasks() {
   const storageTasks = localStorage.getItem('list');
-  tasksList = JSON.parse(storageTasks);
+  
+  if (storageTasks) {
+    tasksList = JSON.parse(storageTasks);
+  }
 
   showTasks();
 }
